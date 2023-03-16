@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
+        
         <title>Calculatrice.js</title>
     </head>
     <body>
@@ -13,26 +13,35 @@
                     <th colspan="3" id="TOTAL"></th>
                 </tr>
                 <tr>
-                    <td><button id="button1">1</button></td>
-                    <td><button id="button2">2</button></td>
-                    <td><button id="button3">3</button></td>
+                    <td><button class="button">1</button></td>
+                    <td><button class="button">2</button></td>
+                    <td><button class="button">3</button></td>
                 </tr>
                 <tr>
-                    <td><button onclick="tape4()" id="4">4</button></td>
-                    <td><button onclick="tape5()" id="5">5</button></td>
-                    <td><button onclick="tape6()" id="6">6</button></td>
+                    <td><button class="button">4</button></td>
+                    <td><button class="button">5</button></td>
+                    <td><button class="button">6</button></td>
                 </tr>
                 <tr>
-                    <td><button onclick="tape7()" id="7">7</button></td>
-                    <td><button onclick="tape8()" id="8">8</button></td>
-                    <td><button onclick="tape9()" id="9">9</button></td>
+                    <td><button class="button">7</button></td>
+                    <td><button class="button">8</button></td>
+                    <td><button class="button">9</button></td>
                 </tr>
                 <tr>
-                    <td><button onclick="del()" id="DEL">DEL</button></td>
-                    <td><button onclick="tape0()" id="0">0</button></td>
-                    <td><button id="ENTER">ENTER</button></td>
+                    <td><button class="button">DEL</button></td>
+                    <td><button class="button">0</button></td>
+                    <td><button class="button">ENTER</button></td>
+                </tr>
+                <tr>
+                    <td colspan="3" id="operandtr">
+                        <button class="operand">+</button>
+                        <button class="operand">-</button>
+                        <button class="operand">x</button>
+                        <button class="operand">/</button>
+                    </td>
                 </tr>
             </table>
         </div>
     </body>
+    <script src="script.js"></script>
 </html>

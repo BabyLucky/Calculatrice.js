@@ -1,6 +1,18 @@
 table{
     border: 3px solid black;
 }
+
+th{
+    background-color: lightgray;
+    height: 75px;
+    font-size: 30px;
+}
+
+.operand{
+    width: 48px;
+}
+
 button{
-    width: 75px;
+    width: 65px;
+    height: 35px;
 }
