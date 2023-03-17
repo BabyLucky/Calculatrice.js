@@ -33,7 +33,7 @@ function calcul(number)
             texte = "9";
             break;
         case "ENTER":
-            
+
             break;
         case "DEL":
             texte = document.getElementById('TOTAL').textContent = "";
@@ -51,7 +51,12 @@ function calcul(number)
             texte = " / ";
             break;
     }
-    var calcul = document.getElementById('TOTAL').textContent += texte;
+    if(texte == " + ")
+    {
+        var calcul = getElementById('TOTAL').textContent;
+        console.log(calcul);
+    }
+    document.getElementById('TOTAL').textContent += texte;
 }
 
 const button = document.querySelectorAll('button');
